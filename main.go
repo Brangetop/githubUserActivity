@@ -12,7 +12,7 @@ import (
 func main() {
 	cmd := &cli.Command{
 		Name:  "github-activity",
-		Usage: "Показывает недавнюю активность пользователя на GitHub",
+		Usage: "Shows recent GitHub activity",
 
 		Action: func(ctx context.Context, cmd *cli.Command) error {
 			username := cmd.Args().Get(0)
